@@ -1,30 +1,31 @@
 var AWS = require('aws-sdk');
 let awsConfig = {
-    "region": "us-east-1", //Cambiar por la region
-    "endpoint": "http://localhost:8000", //Cambiar por el endpoint de la base de datos
-    "accessKeyId": "AKIAIOSFODNN7EXAMPLE", "secretAccessKey": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY" //Cambiar por las credenciales de la base de datos
+    "region": "us-east-1",
+    "endpoint": "http://dynamodb.us-east-1.amazonaws.com",
+    "accessKeyId": "Miaumiaumiau", "secretAccessKey": "Miaumiaumiau" //Agregar las Keys
 };
 AWS.config.update(awsConfig);
 
-let dotClient = new AWS.DynamoDB.DocumentClient();
+let docClient = new AWS.DynamoDB.DocumentClient();
 
 let save = function(){
     var input = { //Se cambiara para que no esté hardcodeado
-        "Key_name": "Variable in key", "created_by": "user name", "created_on": new Date().toString(),
-        "updated_by": "user name", "updated_on": new Date().toString(), "is_deleted": false
+        "agent_id": "2", "callStartUTCDate": new Date().toString(),
+        "mergedRecordingURL": "www.testurl.com/recording/idk", "rating": 5, "sentimentAnalysisURL": "www.anotherurl.com/sentiment/idk",
+        "transcriptURL": "www.yetanotherurl.com/transcript/idk"
     };
 
     var params = {
-        TableName: "Table name", //Cambiar por el nombre de la tabla
+        TableName: "Datamatics",
         Item: input
     };
 
     docClient.put(params, function(err, data) {
         if (err) {
-            console.log("Users::save::error - " + JSON.stringify(err, null, 2));
+            console.log("Datamatics::save::error - " + JSON.stringify(err, null, 2));
         }
         else {
-            console.log("Users::save::success - " + JSON.stringify(data, null, 2)); //Quitar el + despues de comprobar que funciona
+            console.log("Datamatics::save::success - " + JSON.stringify(data, null, 2)); //Quitar el + despues de comprobar que funciona
         }
     });
 }

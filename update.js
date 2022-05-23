@@ -1,8 +1,8 @@
 var AWS = require('aws-sdk');
 let awsConfig = {
-    "region": "us-east-1", //Cambiar por la region
-    "endpoint": "http://localhost:8000", //Cambiar por el endpoint de la base de datos
-    "accessKeyId": "AKIAIOSFODNN7EXAMPLE", "secretAccessKey": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY" //Cambiar por las credenciales de la base de datos
+    "region": "us-east-1",
+    "endpoint": "http://dynamodb.us-east-1.amazonaws.com",
+    "accessKeyId": "Miaumiaumiau", "secretAccessKey": "Miaumiaumiau" //Agregar las Keys
 };
 AWS.config.update(awsConfig);
 
@@ -11,21 +11,23 @@ let docClient = new AWS.DynamoDB.DocumentClient();
 let modify = function() {
 
     var params = { //Se cambiara para que no esté hardcodeado
-        TableName: "Users", //Cambiar por el nombre de la tabla
-        Key: { "Key_name": "Variable in key" }, //Cambiar lo que se vaya a buscar
-        UpdateExpression: "set #name = :byUser, is_deleted = :boolValue", //Cambiar lo que se vaya a modificar
+        TableName: "Datamatics", //Cambiar por el nombre de la tabla
+        Key: { 
+            "agent_id": "2",
+            "callStartUTCDate" : "Mon May 23 2022 17:04:36 GMT-0500 (Central Daylight Time)"
+        }, //Recuerden cambiar los valores que se buscan no las keys
+        UpdateExpression: "set rating = :rating", //Aqui se agregan los keys que se van a modificar
         ExpressionAttributeValues: {
-            ":byUser": "updateUser", //Cambiar lo que se vaya a modificar
-            ":boolValue": true
+            ":rating": 3, //De lo anterior se ponen los valores que se van a modificar
         },
         ReturnValues: "UPDATED_NEW"
     };
     docClient.update(params, function(err, data) {
         if (err) {
-            console.log("Users::modify::error - " + JSON.stringify(err, null, 2));
+            console.log("Datamatics::modify::error - " + JSON.stringify(err, null, 2));
         }
         else {
-            console.log("Users::modify::success - " + JSON.stringify(data, null, 2));
+            console.log("Datamatics::modify::success - " + JSON.stringify(data, null, 2));
         }
     });
 }
