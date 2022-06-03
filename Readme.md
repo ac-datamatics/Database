@@ -73,8 +73,11 @@ Updates or adds one attribute to a table entry. Receives a **JSON with the next 
 {
 <p>
     &emsp;"agentUsername": "<em>[vagentUsername_value]</em>",
+    <br/>
     &emsp;"callStartUTCDate": "<em>[callStartUTCDate_value]</em>",
+    <br/>
     &emsp;"<em>[updateKey]</em>": "<em>[attribute_name]</em>",
+    <br/>
     &emsp;"<em>[updateValue]</em>": "<em>[attribute_value]</em>"
 </p>
 }
