@@ -17,7 +17,7 @@ The program is intended to work via:
 To use this API, access the invoke URL with the intended endpoint. Some endpoints might also require parameters or a body with attributes. Both input and output bodies should be in the JSON format:
 
 ### Read before using
-All the dates should stick to the full ISO 8601 Coordinated Universal Time (UTC) format:
+All the dates should stick to the full ISO 8601 Coordinated Universal Time (UTC) string format:
 <p align="center">
 <em>yyyy-mm-dd</em>T<em>hh:mm:ss.ms</em>Z
 </p>
