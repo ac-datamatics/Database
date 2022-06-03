@@ -53,15 +53,15 @@ Creates a new table entry. The body may include at least the agentUsername and t
 
 {
 <p>
-&nbsp;"agentUsername": "*[vagentUsername_value]*",
+&nbsp;"agentUsername": "<em>[vagentUsername_value]</em>",
 <br/>
-&nbsp;"callStartUTCDate": "*[callStartUTCDate_value]*",
+&nbsp;"callStartUTCDate": "<em>[callStartUTCDate_value]</em>",
 <br/>
-&nbsp;"*[attribute_1_name]*": "*[attribute_1_value]*",
+&nbsp;"<em>[attribute_1_name]</em>": "<em>[attribute_1_value]</em>",
 <br/>
-&nbsp;"*[attribute_2_name]*": "*[attribute_2_value]*",
+&nbsp;"<em>[attribute_2_name]</em>": "<em>[attribute_2_value]</em>",
 <br/>
-&nbsp;"*[attribute_3_name]*": "*[attribute_3_value]*"
+&nbsp;"<em>[attribute_3_name]</em>": "<em>[attribute_3_value]</em>"
 </p>
 }
 
