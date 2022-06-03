@@ -71,7 +71,6 @@ Creates a new table entry. The body may include at least the agentUsername and t
 ### PATCH Endpoints
 ##### /video
 Updates or adds one attribute to a table entry. Receives a **JSON with the next format:**
-**
 
 {
 <p>
