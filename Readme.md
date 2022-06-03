@@ -78,9 +78,9 @@ Updates or adds one attribute to a table entry. Receives a **JSON with the next 
     <br/>
     &emsp;"callStartUTCDate": "<em>[callStartUTCDate_value]</em>",
     <br/>
-    &emsp;"[updateKey]": "<em>[attribute_name]</em>",
+    &emsp;"updateKey": "<em>[attribute_name]</em>",
     <br/>
-    &emsp;"[updateValue]": "<em>[attribute_value]</em>"
+    &emsp;"updateValue": "<em>[attribute_value]</em>"
 </p>
 }
 
