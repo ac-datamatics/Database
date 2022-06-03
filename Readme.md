@@ -45,7 +45,7 @@ Returns all the videos with *is_assigned = false* and whose *queue_id* is one of
 
 {
     <br/>
-    <p>&nbsp "queues_ids": ["*[id_1]*", "*[id_2]*", "*[id_n]*"]</p>
+    <p>&nbsp; "queues_ids": ["*[id_1]*", "*[id_2]*", "*[id_n]*"]</p>
     <br/>
 }
 
