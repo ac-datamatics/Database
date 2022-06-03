@@ -53,7 +53,7 @@ Creates a new table entry. The body may include at least the agentUsername and t
 
 {
 <p>
-    &ensp;"agentUsername": "<em>[vagentUsername_value]</em>",
+    &emsp;"agentUsername": "<em>[vagentUsername_value]</em>",
     <br/>
     &nbsp;"callStartUTCDate": "<em>[callStartUTCDate_value]</em>",
     <br/>
