@@ -55,13 +55,13 @@ Creates a new table entry. The body may include at least the agentUsername and t
 <p>
     &emsp;"agentUsername": "<em>[vagentUsername_value]</em>",
     <br/>
-    &nbsp;"callStartUTCDate": "<em>[callStartUTCDate_value]</em>",
+    &emsp;"callStartUTCDate": "<em>[callStartUTCDate_value]</em>",
     <br/>
-    &nbsp;"<em>[attribute_1_name]</em>": "<em>[attribute_1_value]</em>",
+    &emsp;"<em>[attribute_1_name]</em>": "<em>[attribute_1_value]</em>",
     <br/>
-    &nbsp;"<em>[attribute_2_name]</em>": "<em>[attribute_2_value]</em>",
+    &emsp;"<em>[attribute_2_name]</em>": "<em>[attribute_2_value]</em>",
     <br/>
-    &nbsp;"<em>[attribute_3_name]</em>": "<em>[attribute_3_value]</em>"
+    &emsp;"<em>[attribute_3_name]</em>": "<em>[attribute_3_value]</em>"
 </p>
 }
 
@@ -72,10 +72,10 @@ Updates or adds one attribute to a table entry. Receives a **JSON with the next 
 
 {
 <p>
-    "agentUsername": "*[vagentUsername_value]*",
-    "callStartUTCDate": "*[callStartUTCDate_value]*",
-    "*[updateKey]*": "*[attribute_name]*",
-    "*[updateValue]*": "*[attribute_value]*
+    &emsp;"agentUsername": "<em>[vagentUsername_value]</em>",
+    &emsp;"callStartUTCDate": "<em>[callStartUTCDate_value]</em>",
+    &emsp;"<em>[updateKey]</em>": "<em>[attribute_name]</em>",
+    &emsp;"<em>[updateValue]</em>": "<em>[attribute_value]</em>"
 </p>
 }
 
