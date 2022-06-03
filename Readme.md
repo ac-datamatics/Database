@@ -53,15 +53,15 @@ Creates a new table entry. The body may include at least the agentUsername and t
 
 {
 <p>
-&nbsp;"agentUsername": "<em>[vagentUsername_value]</em>",
-<br/>
-&nbsp;"callStartUTCDate": "<em>[callStartUTCDate_value]</em>",
-<br/>
-&nbsp;"<em>[attribute_1_name]</em>": "<em>[attribute_1_value]</em>",
-<br/>
-&nbsp;"<em>[attribute_2_name]</em>": "<em>[attribute_2_value]</em>",
-<br/>
-&nbsp;"<em>[attribute_3_name]</em>": "<em>[attribute_3_value]</em>"
+    &ensp;"agentUsername": "<em>[vagentUsername_value]</em>",
+    <br/>
+    &nbsp;"callStartUTCDate": "<em>[callStartUTCDate_value]</em>",
+    <br/>
+    &nbsp;"<em>[attribute_1_name]</em>": "<em>[attribute_1_value]</em>",
+    <br/>
+    &nbsp;"<em>[attribute_2_name]</em>": "<em>[attribute_2_value]</em>",
+    <br/>
+    &nbsp;"<em>[attribute_3_name]</em>": "<em>[attribute_3_value]</em>"
 </p>
 }
 
@@ -71,10 +71,12 @@ Updates or adds one attribute to a table entry. Receives a **JSON with the next 
 **
 
 {
+<p>
     "agentUsername": "*[vagentUsername_value]*",
     "callStartUTCDate": "*[callStartUTCDate_value]*",
     "*[updateKey]*": "*[attribute_name]*",
-    "*[updateValue]*": "*[attribute_value]*"
+    "*[updateValue]*": "*[attribute_value]*
+</p>
 }
 
 ### DELETE Endpoints
