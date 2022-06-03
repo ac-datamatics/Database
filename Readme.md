@@ -44,7 +44,7 @@ Returns a list of the videos in a date range (which must be inserted in UTC form
 </p>
 
 ##### /assigned_videos
-Returns all the videos with *is_assigned = false* and whose *queue_id* is one of the input ids. This function performs a database table scan, with filters applied, which means it's **very expensive.** It receives a **JSON body with the next format:**
+Returns all the videos with *is_assigned = true* and whose *queue_id* is one of the input ids. This function performs a database table scan, with filters applied, which means it's **very expensive.** It receives a **JSON body with the next format:**
 
 {
     <p>&nbsp; "queues_ids": ["*[id_1]*", "*[id_2]*", "*[id_n]*"]</p>
