@@ -37,14 +37,16 @@ Returns the attributes of **an specific video.** Date must be inserted in UTC fo
 ##### /video?agentUsername=*[agentUsername]*&minDate=*[minDate]*&maxDate=*[maxDate]*
 Returns a list of the videos in a date range (which must be inserted in UTC format). The query follows the next rule (which means the results are inclusive with the provided dates):
 <p align="center">
-<em>minDate &lt= Fecha de videos regresados &lt= maxDate</em>
+<em>minDate &lt= Date of the returned videos &lt= maxDate</em>
 </p>
 
 ##### /assigned_videos
 Returns all the videos with *is_assigned = false* and whose *queue_id* is one of the input ids. This function performs a database table scan, with filters applied, which means it's **very expensive.** It receives a **JSON body with the next format:**
 
 {
+    <br/>
     "queues_ids": ["*[id_1]*", "*[id_2]*", "*[id_n]*"]
+    <br/>
 }
 
 ### POST Endpoints
