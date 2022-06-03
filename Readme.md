@@ -27,6 +27,9 @@ As in the next example:
 <em>2022-06-02T03:38:53.705Z</em>
 </p>
 
+### Invoke URL
+[https://2uxbgsvox5.execute-api.us-east-1.amazonaws.com/Datamatics](https://2uxbgsvox5.execute-api.us-east-1.amazonaws.com/Datamatics)
+
 ### GET Endpoints
 ##### /video
 Returns all of the videos stored in the database, no filter applied. This methods performs a table scan, which is **very expensive.** Please avoid using it unnecessarily.
