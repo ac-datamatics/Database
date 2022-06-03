@@ -52,11 +52,13 @@ Returns all the videos with *is_assigned = false* and whose *queue_id* is one of
 Creates a new table entry. The body may include at least the agentUsername and the callStartUTCDate (*partition* and *sort key*), but might include as much attributes as necessary. The method receives a **JSON with the next format:**
 
 {
-    "agentUsername": "*[vagentUsername_value]*",
-    "callStartUTCDate": "*[callStartUTCDate_value]*",
-    "*[attribute_1_name]*": "*[attribute_1_value]*",
-    "*[attribute_2_name]*": "*[attribute_2_value]*",
-    "*[attribute_3_name]*": "*[attribute_3_value]*"
+<p>
+&nbsp;"agentUsername": "*[vagentUsername_value]*",
+&nbsp;"callStartUTCDate": "*[callStartUTCDate_value]*",
+&nbsp;"*[attribute_1_name]*": "*[attribute_1_value]*",
+&nbsp;"*[attribute_2_name]*": "*[attribute_2_value]*",
+&nbsp;"*[attribute_3_name]*": "*[attribute_3_value]*"
+</p>
 }
 
 ### PATCH Endpoints
