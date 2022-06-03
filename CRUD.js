@@ -201,7 +201,7 @@ async function deleteVideo(agentUsername, callStartUTCDate) {
     })
 }
 
-function buildResponse(statusCode, body){ // This method will build the response for any of the methods utilized
+function buildResponse(statusCode, body) { // This method will build the response for any of the methods utilized
     return {
         statusCode: statusCode,
         headers: {
