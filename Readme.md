@@ -54,9 +54,13 @@ Creates a new table entry. The body may include at least the agentUsername and t
 {
 <p>
 &nbsp;"agentUsername": "*[vagentUsername_value]*",
+<br/>
 &nbsp;"callStartUTCDate": "*[callStartUTCDate_value]*",
+<br/>
 &nbsp;"*[attribute_1_name]*": "*[attribute_1_value]*",
+<br/>
 &nbsp;"*[attribute_2_name]*": "*[attribute_2_value]*",
+<br/>
 &nbsp;"*[attribute_3_name]*": "*[attribute_3_value]*"
 </p>
 }
