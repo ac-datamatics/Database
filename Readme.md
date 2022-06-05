@@ -56,7 +56,7 @@ Creates a new table entry. The body may include at least the agentUsername and t
 
 {
 <p>
-    &emsp;"agentUsername": "<em>[vagentUsername_value]</em>",
+    &emsp;"agentUsername": "<em>[agentUsername_value]</em>",
     <br/>
     &emsp;"callStartUTCDate": "<em>[callStartUTCDate_value]</em>",
     <br/>
@@ -74,7 +74,7 @@ Updates or adds one attribute to a table entry. Receives a **JSON with the next 
 
 {
 <p>
-    &emsp;"agentUsername": "<em>[vagentUsername_value]</em>",
+    &emsp;"agentUsername": "<em>[agentUsername_value]</em>",
     <br/>
     &emsp;"callStartUTCDate": "<em>[callStartUTCDate_value]</em>",
     <br/>
